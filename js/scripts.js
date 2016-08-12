@@ -6,4 +6,19 @@ $(document).ready(function() {
 
   //collect variables
 
-  var = $("input:radio[name=build]:checked").val();
+  var build = $("input:radio[name=build]:checked").val();
+
+
+  if  (build === 'minecraft') {
+    $("#java").show();
+    } else if (build === 'airbnb') {
+    $("#ruby").show();
+    } else if (build === 'facebook') {
+    $("#php").show();
+    } else (build === 'stack-overflow') {
+    $("#c-sharp").show();
+    }
+}
+
+});
+});
