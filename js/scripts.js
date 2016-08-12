@@ -6,19 +6,9 @@ $(document).ready(function() {
 
   //collect variables
 
-  var build = $("input:radio[name=build]:checked").val();
+  var experience = parseInt($("input:radio[name=experience]:checked").val());
 
-
-  if  (build === 'minecraft') {
-    $("#java").show();
-    } else if (build === 'airbnb') {
-    $("#ruby").show();
-    } else if (build === 'facebook') {
-    $("#php").show();
-    } else (build === 'stack-overflow') {
-    $("#c-sharp").show();
-    }
-}
-
-});
+  if (experience >= 7) {
+      $("#php").show();
+  }
 });
