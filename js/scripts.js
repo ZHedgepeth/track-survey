@@ -13,7 +13,7 @@ $(document).ready(function() {
 
     if (experience === 'a-lot') {
     //experience level
-
+      alert("alot");
       if (industry === 'web-dev') {
       //industry
 
@@ -34,8 +34,9 @@ $(document).ready(function() {
           }
         }
       }
+    } else {
+      alert("none");
     }
-
 
     //
     // if (experience === 'none')
