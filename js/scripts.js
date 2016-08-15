@@ -4,47 +4,54 @@ $(document).ready(function() {
 
     event.preventDefault();
 
-var experience = $("input:radio[name=experience]:checked").val();
-var industry = $("input:radio[name=industry]:checked").val();
-var interaction = $("input:radio[name=interaction]:checked").val();
-var companyType = $("input:radio[name=companyType]:checked").val();
-var application = $("input:radio[name=application]:checked").val();
-// var company = $("input:radio[name=company]:checked").val();
+    var experience = $("input:radio[name=experience]:checked").val();
+    var industry = $("input:radio[name=industry]:checked").val();
+    var interaction = $("input:radio[name=interaction]:checked").val();
+    var companyType = $("input:radio[name=companyType]:checked").val();
+    var application = $("input:radio[name=application]:checked").val();
+    // var company = $("input:radio[name=company]:checked").val();
 
-  if (experience === 'a-lot') {
+    if (experience === 'a-lot') {
+    //experience level
 
-    if (industry === 'web-dev') {
+      if (industry === 'web-dev') {
+      //industry
 
-      if (interaction === 'heavy') {
+        if (interaction === 'heavy') {
+        //user interaction
 
-        if (companyType === 'enterprise') {
+          if (companyType === 'enterprise') {
+          //enterprise/startup
 
-        if (application === 'android') {
-          $('#java').show();
-        }  else if (application === 'web') {
-          $('#ruby').show();
-        } else {
-          $('#csharp').show();
+            if (application === 'android') {
+            //app type
+              $('#java').show();
+            }  else if (application === 'web') {
+              $('#ruby').show();
+            } else {
+              $('#csharp').show();
+            }
+          }
         }
       }
-    
+    }
 
 
-//
-//     if (experience === 'none')
-//     if (industry === 'web-dev')
-//     if (interaction === 'little')
-//     if (companyType === 'startup')
-//     { $('#php').show(); }
-//      if (application === 'web')
-//       { $('#php').show(); }
-//      else if (application === 'windows')
-//       { $('#csharp').show();}
-//
-//
-// });
+    //
+    // if (experience === 'none')
+    // if (industry === 'web-dev')
+    // if (interaction === 'little')
+    // if (companyType === 'startup')
+    // { $('#php').show(); }
+    //  if (application === 'web')
+    //   { $('#php').show(); }
+    //  else if (application === 'windows')
+    //   { $('#csharp').show();}
 
 
+  });
+
+});
 
 
 
