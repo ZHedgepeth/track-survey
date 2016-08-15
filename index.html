@@ -9,150 +9,132 @@
   </head>
   <body>
     <div class="container">
-    <h1>Track Suggester Survey</h1>
-    <h2>Find out which track is for you</h2>
-    <form id="info">
+      <h1>Track Suggester Survey</h1>
+      <h2>Find out which track is for you</h2>
+      <form id="info">
+        <label><h3>What is your current coding experience level?</h3></label>
+        <div class="radio">
+          <label>
+            <input type="radio" name="experience" value="a-lot">
+            A lot!
+          </label>
+        </div>
+        <div class="radio">
+          <label>
+            <input type="radio" name="experience" value="none">
+            Very little to none.
+          </label>
+        </div>
 
-      <label><h3>What is your current coding experience level?</h3></label>
-      <div class="radio">
-        <label>
-          <input type="radio" name="experience" value="3">
-          A lot!
-        </label>
-      </div>
-      <div class="radio">
-        <label>
-          <input type="radio" name="experience" value="2">
-          Moderate.
-        </label>
-      </div>
-      <div class="radio">
-        <label>
-          <input type="radio" name="experience" value="1">
-          Very little to none.
-        </label>
-    <button type="submit" class="btn">SUBMIT!</button>
+
         <label><h3>Are interested in Web Development or Software Engineering?</h3></label>
         <div class="radio">
           <label>
-            <input type="radio" name="experience" value="2">
+            <input type="radio" name="industry" value="web-dev">
             Web Development
           </label>
         </div>
         <div class="radio">
           <label>
-            <input type="radio" name="experience" value="2">
+            <input type="radio" name="industry" value="software">
             Software Engineering
           </label>
         </div>
-      </div>
-    <button type="submit" class="btn">SUBMIT!</button>
-      <label><h3>How much interaction from your user do you desire?</h3></label>
-      <div class="radio">
-        <label>
-          <input type="radio" name="experience" value="3">
-          Heavy
-        </label>
-      </div>
-      <div class="radio">
-        <label>
-          <input type="radio" name="experience" value="2">
-          Moderate
-        </label>
-      </div>
-      <div class="radio">
-        <label>
-          <input type="radio" name="experience" value="1">
-          Little
-        </label>
-      </div>
-    <button type="submit" class="btn">SUBMIT!</button>
-      <label><h3>Which of these choices are you most interested in building</h3></label>
-      <div class="radio">
-        <label>
-          <input type="radio" name="experience" value="2">
-          Minecraft
-        </label>
-      </div>
-      <div class="radio">
-        <label>
-          <input type="radio" name="experience" value="2">
-          Airbnb
-        </label>
-      </div>
-      <div class="radio">
-        <label>
-          <input type="radio" name="experience" value="1">
-          Facebook
-        </label>
-      </div>
-      <div class="radio">
-        <label>
-          <input type="radio" name="experience" value="3">
-          Stack Over-flow
-        </label>
-      </div>
-    <button type="submit" class="btn">SUBMIT!</button>
-      <label><h3>Which of these choices most interests you?</h3></label>
-      <div class="radio">
-        <label>
-          <input type="radio" name="experience" value="2">
-          Android
-        </label>
-      </div>
-      <div class="radio">
-        <label>
-          <input type="radio" name="experience" value="1">
-          Web Applications
-        </label>
-      </div>
-      <div class="radio">
-        <label>
-          <input type="radio" name="experience" value="3">
-          Windows Applications
-        </label>
-      </div>
-    <button type="submit" class="btn">SUBMIT!</button>
-      <label><h3>Which of these companies is most appealing?</h3></label>
-      <div class="radio">
-        <label>
-          <input type="radio" name="experience" value="3">
-          Large Company
-        </label>
-      </div>
-    <button type="submit" class="btn">SUBMIT!</button>
-      <div class="radio">
-        <label>
-          <input type="radio" name="experience" value="1">
-          Enterprise Company
-        </label>
-      </div>
-      <div class="radio">
-        <label>
-          <input type="radio" name="experience" value="2">
-          Startup
-        </label>
-      </div>
+
+        <label><h3>How much interaction from your user do you desire?</h3></label>
+        <div class="radio">
+          <label>
+            <input type="radio" name="interaction" value="heavy">
+            Heavy
+          </label>
+        </div>
+        <div class="radio">
+          <label>
+            <input type="radio" name="interaction" value="little">
+            Little
+          </label>
+        </div>
+
+        <label><h3>Which of these types of companies is most appealing?</h3></label>
+        <div class="radio">
+          <label>
+            <input type="radio" name="companyType" value="enterprise">
+            Enterprise Company
+          </label>
+        </div>
+        <div class="radio">
+          <label>
+            <input type="radio" name="companyType" value="startup">
+            Startup
+          </label>
+        </div>
+
+        <label><h3>Various Web applications, Windows applications, or Android/IOS applications?</h3></label>
+        <div class="radio">
+          <label>
+            <input type="radio" name="application" value="windows">
+            Windows Applications
+          </label>
+        </div>
+        <div class="radio">
+          <label>
+            <input type="radio" name="application" value="web">
+            Web applications
+          </label>
+        </div>
+        <div class="radio">
+          <label>
+            <input type="radio" name="application" value="android">
+            Android/IOS
+          </label>
+        </div>
+
+        <!-- <label><h3>Which of these choices are you most interested in building</h3></label>
+        <div class="radio">
+          <label>
+            <input type="radio" name="company" value="minecraft">
+            Minecraft
+          </label>
+        </div>
+        <div class="radio">
+          <label>
+            <input type="radio" name="company" value="airbnb">
+            Airbnb
+          </label>
+        </div>
+        <div class="radio">
+          <label>
+            <input type="radio" name="company" value="facebook">
+            Facebook
+          </label>
+        </div>
+        <div class="radio">
+          <label>
+            <input type="radio" name="company" value="stack">
+            Stack Over-flow
+          </label>
+        </div> -->
 
     <button type="submit" class="btn">SUBMIT!</button>
     </form>
+    <div id="output"></div>
+    <div class="img">
+      <div id="java">
+        <img src="img/java.jpg">
+      </div>
 
-    <div id="java">
-      <img src="img/java.jpg">
+      <div id="ruby">
+        <img src="img/ruby.jpg">
+      </div>
+
+      <div id="php">
+        <img src="img/php.jpg">
+      </div>
+
+      <div id="csharp">
+        <img src="img/csharp.jpg">
+      </div>
     </div>
-
-    <div id="ruby">
-      <img src="img/ruby.jpg">
-    </div>
-
-    <div id="php">
-      <img src="img/php.jpg">
-    </div>
-
-    <div id="csharp">
-      <img src="img/csharp.jpg">
-    </div>
-
     </div>
   </body>
 </html>
