@@ -16,7 +16,7 @@ $(document).ready(function() {
       alert("alot");
       if (industry === 'web-dev') {
       //industry
-
+        alert('webdev');
         if (interaction === 'heavy') {
         //user interaction
 
@@ -33,6 +33,8 @@ $(document).ready(function() {
             }
           }
         }
+      } else {
+        alert('software');
       }
     } else {
       alert("none");
