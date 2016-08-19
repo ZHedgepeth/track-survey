@@ -9,14 +9,14 @@ $(document).ready(function() {
     var interaction = $("input:radio[name=interaction]:checked").val();
     var companyType = $("input:radio[name=companyType]:checked").val();
     var application = $("input:radio[name=application]:checked").val();
-    // var company = $("input:radio[name=company]:checked").val();
+
 
     if (experience === 'a-lot') {
     //experience level
-      alert("alot");
+    alert("alot");
       if (industry === 'web-dev') {
       //industry
-        alert('webdev');
+      alert('webdev');
         if (interaction === 'moderate') {
         //user interaction
         alert('moderate');
@@ -25,20 +25,39 @@ $(document).ready(function() {
           alert('enterprise')
             if (application === 'android') {
             //app type
-              $('#java').show();
+            $('#java').show();
+
             } else if (application === 'web') {
               $('#ruby').show();
             } else {
               $('#csharp').show();
             }
+          } else {
+            alert('startup')
+            if (application === 'web') {
+              $('#ruby').show();
+            } else if (application === 'windows') {
+              $('#csharp').show();
+            } else {
+              $('#java').show();
+            }
           }
-        } else {
-          alert('startup')
         }
+
       } else {
         alert('software');
-      } 
-
+          if (interaction === 'moderate' || interaction === 'heavy') {
+          alert('moderate')
+            if (companyType === 'enterprise') {
+            alert('s m e')
+              if (application === 'windows') {
+              $('#csharp').show();
+            } else {
+              $('#php').show();
+            }
+            }
+          }
+        }
 
 
     } else {
@@ -49,99 +68,16 @@ $(document).ready(function() {
           alert('almost php')
             if (companyType === 'enterprise') {
             alert('php php')
-              if (application === 'web') {
+              if (application === 'web' || application === 'windows' || application ==='android') {
               $('#php').show();
-              } if (application === 'windows') {
-                $('#csharp').show();
+              }
               }
             }
           }
         }
-      }
 
-    //
-    // if (experience === 'none')
-    // if (industry === 'web-dev')
-    // if (interaction === 'little')
-    // if (companyType === 'startup')
-    // { $('#php').show(); }
-    //  if (application === 'web')
-    //   { $('#php').show(); }
-    //  else if (application === 'windows')
-    //   { $('#csharp').show();}
 
 
   });
 
 });
-
-
-// } else {
-//   alert("none");
-// } if (industry === 'web-dev' || industry === 'software') {
-//   alert("none and web")
-// } if (interaction === 'heavy') {
-//   alert('almost php')
-// } if (companyType === 'enterprise') {
-//   alert('php php')
-// } if (application === 'web') {
-//   $('#php').show();
-// } else if (application === 'windows') {
-//   $ $('#csharp').show();
-// }
-
-
-
-
-// })
-//     if (experience === 'none')
-//     if (industry === 'software')
-//     if (interaction === 'heavy' || interaction === 'little')
-//     if (companyType === 'startup')
-//     if (application === 'web') {
-//       $('#php').show();
-// }
-
-
-//    if (industry === 'software') {
-//
-//     if (interaction === 'heavy') {
-//
-//       if (company-type === 'large') {
-//
-//         if (company === 'stack')
-//           //  $("#csharp").show();
-//         alert("csharp");
-// }
-// }
-// }
-// }
-//     } else {
-//
-//       if (experience === 'a-lot') {
-//
-//       if (industry === 'software') {
-//
-//         if (interaction === 'heavy') {
-//
-//           if (company-type === 'enterprise') {
-//
-//             if (company === 'facebook')
-//             $('$php').show();
-//           }
-//         }
-//       }
-//
-// }
-// }
-// };
-// };
-  // } else if (company-type === "startup") {
-  //   $("#ruby").show();
-  //
-  // } else if (company-type === "large") {
-  //   $("#php").show();
-  //
-  // } else  {
-  //   $("#java").show();
-  // }
