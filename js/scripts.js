@@ -1,7 +1,5 @@
 $(document).ready(function() {
-
   $("form#info").submit(function(event) {
-
     event.preventDefault();
 
     var experience = $("input:radio[name=experience]:checked").val();
@@ -10,30 +8,24 @@ $(document).ready(function() {
     var companyType = $("input:radio[name=companyType]:checked").val();
     var application = $("input:radio[name=application]:checked").val();
 
-
     if (experience === 'a-lot') {
     //experience level
-    alert("alot");
       if (industry === 'web-dev') {
       //industry
-      alert('webdev');
         if (interaction === 'moderate') {
         //user interaction
-        alert('moderate');
           if (companyType === 'enterprise') {
-          //enterprise/startup
-          alert('enterprise')
+          //enterprise
             if (application === 'android') {
             //app type
             $('#java').show();
-
             } else if (application === 'web') {
-              $('#ruby').show();
+              $('#php').show();
             } else {
               $('#csharp').show();
             }
           } else {
-            alert('startup')
+            // experience: alot, industry: web dev, interaction: moderate, companyType: startup
             if (application === 'web') {
               $('#ruby').show();
             } else if (application === 'windows') {
@@ -44,9 +36,9 @@ $(document).ready(function() {
           }
 
         } else {
-          alert('heavy')
+          //alot, web dev, heavy
             if (companyType === 'enterprise' || companyType === 'startup') {
-            alert ('alot, webdev, heavy, enterprise or startup')
+            // alot, webdev, heavy, enterprise or startup'
               if (application === 'android') {
               $('#java').show();
             } else if (application === 'windows') {
@@ -54,15 +46,15 @@ $(document).ready(function() {
             } else {
               $('#ruby').show();
             }
+          }
         }
-      }
 
       } else {
-        alert('software');
+        // alot, software
           if (interaction === 'moderate' || interaction === 'heavy') {
-          alert('moderate')
-            if (companyType === 'enterprise') {
-            alert('s m e')
+          // alot, software, moderate or heavy
+            if (companyType === 'enterprise' || companyType === 'startup') {
+            // alot, software, moderate or heavy, and enterprise
               if (application === 'windows') {
               $('#csharp').show();
             } else {
@@ -72,26 +64,24 @@ $(document).ready(function() {
           }
         }
 
-
     } else {
-        alert("none");
+        // no experience,
         if (industry === 'web-dev' || industry === 'software') {
-        alert("none and web")
+        //no experience and web-dev or software engineering
           if (interaction === 'heavy') {
-          alert('almost php')
-            if (companyType === 'enterprise') {
-            alert('php php')
+          //no experience and web-dev or software engineering, and heavy interaction
+            if (companyType === 'enterprise' || companyType === 'startup') {
+            //no experience/web-dev or software engineering/heavy interaction/ enterprise or startup
               if (application === 'windows' || application ==='android') {
-              $('#php').show();
+              $('#csharp').show();
             } else {
               $('#ruby').show();
             }
-              }
-
+            }
           } else {
-            alert('none, web and soft, moderate')
+             //no experience and web-dev or software engineering, moderate interaction
               if (companyType === 'enterprise' || companyType === 'startup') {
-              alert('none, web/soft, moderate, enterprise/startup')
+              // no experience, web-dev/software, moderate, enterprise/startup
                 if (application === 'windows' || application ==='android') {
                 $('#php').show();
               } else {
@@ -101,9 +91,5 @@ $(document).ready(function() {
             }
           }
         }
-
-
-
   });
-
 });
