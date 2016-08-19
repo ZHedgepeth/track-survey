@@ -42,7 +42,20 @@ $(document).ready(function() {
               $('#java').show();
             }
           }
+
+        } else {
+          alert('heavy')
+            if (companyType === 'enterprise' || companyType === 'startup') {
+            alert ('alot, webdev, heavy, enterprise or startup')
+              if (application === 'android') {
+              $('#java').show();
+            } else if (application === 'windows') {
+              $('#csharp').show();
+            } else {
+              $('#ruby').show();
+            }
         }
+      }
 
       } else {
         alert('software');
@@ -68,8 +81,21 @@ $(document).ready(function() {
           alert('almost php')
             if (companyType === 'enterprise') {
             alert('php php')
-              if (application === 'web' || application === 'windows' || application ==='android') {
+              if (application === 'windows' || application ==='android') {
               $('#php').show();
+            } else {
+              $('#ruby').show();
+            }
+              }
+
+          } else {
+            alert('none, web and soft, moderate')
+              if (companyType === 'enterprise' || companyType === 'startup') {
+              alert('none, web/soft, moderate, enterprise/startup')
+                if (application === 'windows' || application ==='android') {
+                $('#php').show();
+              } else {
+                $('#ruby').show();
               }
               }
             }
