@@ -17,28 +17,47 @@ $(document).ready(function() {
       if (industry === 'web-dev') {
       //industry
         alert('webdev');
-        if (interaction === 'heavy') {
+        if (interaction === 'moderate') {
         //user interaction
-
+        alert('moderate');
           if (companyType === 'enterprise') {
           //enterprise/startup
-
+          alert('enterprise')
             if (application === 'android') {
             //app type
               $('#java').show();
-            }  else if (application === 'web') {
+            } else if (application === 'web') {
               $('#ruby').show();
             } else {
               $('#csharp').show();
             }
           }
+        } else {
+          alert('startup')
         }
       } else {
         alert('software');
-      }
+      } 
+
+
+
     } else {
-      alert("none");
-    }
+        alert("none");
+        if (industry === 'web-dev' || industry === 'software') {
+        alert("none and web")
+          if (interaction === 'heavy') {
+          alert('almost php')
+            if (companyType === 'enterprise') {
+            alert('php php')
+              if (application === 'web') {
+              $('#php').show();
+              } if (application === 'windows') {
+                $('#csharp').show();
+              }
+            }
+          }
+        }
+      }
 
     //
     // if (experience === 'none')
@@ -57,6 +76,19 @@ $(document).ready(function() {
 });
 
 
+// } else {
+//   alert("none");
+// } if (industry === 'web-dev' || industry === 'software') {
+//   alert("none and web")
+// } if (interaction === 'heavy') {
+//   alert('almost php')
+// } if (companyType === 'enterprise') {
+//   alert('php php')
+// } if (application === 'web') {
+//   $('#php').show();
+// } else if (application === 'windows') {
+//   $ $('#csharp').show();
+// }
 
 
 
